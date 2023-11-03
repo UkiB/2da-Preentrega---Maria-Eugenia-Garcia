@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fuego & Oro</title>
+    <link rel="icon" type="image/ico" href="../img/favicon.ico">
+    <script src="https://kit.fontawesome.com/94eb0a4c54.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../img/logo-white.png" class="logoNavbar" alt="Logo de Fuego&Oro">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/sobrenosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/menuonline.html">El Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <main>
+            <picture class="bannerHeader">
+                <source media="(min-width: 768px)" srcset="/img/contacto-banner-desktop.jpg">
+                <img src="../img/contacto-banner-mobile.jpg" alt="Banner de página de Contacto">
+            </picture>
+            <section class="seccionContacto">
+                <div class="cardContacto">
+                    <div class="mapaContacto">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.28119093419!2d-58.36756232262164!3d-34.62233375848445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d1e39a4ef5%3A0xe8319ee25d718a5d!2sAv.%20Alicia%20Moreau%20de%20Justo%202020%2C%20C1107%20Puerto%20Madero%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1698933647171!5m2!1ses-419!2sar"
+                            width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="formContacto">
+                        <h5>¡Hola!</h5>
+                        <h1>Contactanos</h1>
+                        <p>Hacé tu reserva/pedido o mandanos tu consulta acá :</p>
+                        <form>
+                            <label for="name" class="formTexto">Nombre *</label>
+                            <input type="text" name="name" class="formTexto2" placeholder="Nombre y apellido" required>
+                            <label for="mail" class="formTexto">Email</label>
+                            <input type="email" name="mail" class="formTexto2" placeholder="Tu email">
+                            <label for="date" class="formTexto">Fecha deseada de Reserva</label>
+                            <input type="date" name="date" class="formTexto2" min="2023-01-11" max="2024-07-01">
+                            <label for="hours" class="formTexto">Hora deseada de Reserva - de 09 a 23 hs</label>
+                            <input type="time" name="time" class="formTexto2" value="09:00">
+                            <label for="mensaje" class="formTexto"> Mensaje *</label>
+                            <textarea name="message" cols="30" rows="10" placeholder="Dejá tus comentarios"
+                                class="formMensaje" required></textarea>
+                            <h5>* = Requerido</h5>
+                            <input class="botonForm" type="submit" value="Enviar Datos">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <footer class="footer">
+        <div class="footerBox1">
+            <div class="box">
+                <div>
+                    <a href="#">
+                        <img src="../img/logo-white.png" alt="logo de Fuego&Oro">
+                    </a>
+                </div>
+                <h5 class="toTop"><a href="#" class="fa-solid fa-circle-chevron-up fa-xl"> Ir arriba</a></h5>
+            </div>
+            <div class="box">
+                <h5><i class="fa-solid fa-location-dot"></i> Dirección</h5>
+                <p>Av. Alicia Moreau de Justo 2020, CABA, ARG.</p>
+                <h5><i class="fa-solid fa-clock"></i> Horarios</h5>
+                <p>Lunes a Sabado 09 AM - 00 AM
+                    Domingo 10 AM - 18 PM
+                </p>
+                <h5><i class="fa-solid fa-utensils"></i> Reservas</h5>
+                <p>+54 11 1234-5678 / Reservas@paginaweb.com</p>
+            </div>
+            <div class="box">
+                <div class="socialMedia">
+                    <a href="#" class="fa-brands fa-whatsapp fa-xl"></a>
+                    <a href="#" class="fa-brands fa-instagram fa-xl"></a>
+                    <a href="#" class="fa-brands fa-tiktok fa-xl"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footerBox2">
+            <small>© 2023 Fuego&Oro - Todos los derechos reservados</small>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
