@@ -1025,6 +1025,7 @@ textarea:focus {
     text-transform: uppercase;
     padding: 10px 0px;
 }
+
 .footer .footerBox1 .box p{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
@@ -1059,6 +1060,10 @@ textarea:focus {
     font-family: 'Jost', sans-serif;
     font-size: 0.7rem;
     letter-spacing: 5px;
+}
+
+.toTop a:hover{
+    color: #dbb886;
 }
 
 .footer .footerBox1 .socialMedia a:hover{
