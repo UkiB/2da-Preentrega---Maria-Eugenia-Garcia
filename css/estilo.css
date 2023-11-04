@@ -215,7 +215,6 @@ p {
     left: 50%;
     transform: translate(-50%, 50%);
     padding: 40px 0px 0px 0px;
-    
 }
 
 .divBoton {
@@ -225,6 +224,11 @@ p {
 
 
 @media (min-width: 320px) and (max-width: 599px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     .videoParallax h1 {
         font-size: 2.3rem;
         z-index: 2;
@@ -247,6 +251,10 @@ p {
 
 @media (min-width: 600px) and (max-width: 1023px) {
 
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     .videoParallax h1 {
         font-size: 2.3rem;
         z-index: 2;
@@ -518,9 +526,7 @@ img {
 .iconosDietas {
     width: 35px;
     opacity: 0.5;
-
 }
-
 
 .tituloMenu ul {
     margin: 10px auto;
@@ -569,8 +575,7 @@ img {
 
 .menu1 {
     display: flex;
-    margin: 25px 300px;
-
+    margin: 25px 300px 150px 300px;
 }
 
 .box1 {
@@ -582,12 +587,13 @@ img {
 
 .box2 {
     flex: 1;
-    margin: 10px;
+    margin: 30px;
 }
 
 .menu1 .box1 img{
     width: 30px;
     float: right;
+    transform: translateY(10px);
 }
 
 .nombreItemMenu {
@@ -601,9 +607,9 @@ img {
 
 .lineaItemMenu {
     display: block;
-    max-width: 550px;
+    max-width: 1380px;
     height: 1px;
-    background: #FFF;
+    background: #8e8e8e;
     margin-bottom: 20px;
 }
 
@@ -613,8 +619,7 @@ img {
     letter-spacing: 5px;
     font-size: 2rem;
     color: #dbae6f;
-    padding-top: 20px;
-    padding-bottom: 30px;
+
 }
 
 .comidaTitulo {
@@ -625,7 +630,22 @@ img {
     color: #FFF;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 320px) and (max-width: 799px) {
+
+    .tituloMenu {
+        margin: 65px 30px;
+    }
+    .tituloMenu h5{
+        margin: 0px 0px 10px 0px;
+    }
+    .parrafo {
+        width: 90%;
+    }
+    .tituloMenu ul {
+        margin: 600px 50px 300px 400px;
+        width: 50%;
+    }
+
     .menu1 {
         flex-direction: column;
         margin: 25px 0px;
@@ -635,13 +655,47 @@ img {
         padding: 10px;
     }
     .comidaTitulo {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         text-align: center;
 
     }
     .nombreItemMenu {
-        font-size: 1rem;
+        font-size: 1.3rem;
+
+    }
+}
+
+@media (max-width: 800px) {
+
+    .tituloMenu {
+        margin: 65px 30px;
+    }
+    .tituloMenu h5{
+        margin: 0px 0px 10px 0px;
+    }
+    .tituloMenu .parrafo p{
+        margin: 0px 40px 30px 40px;
+    }
+    .tituloMenu ul {
+        margin: 10px 200px 10px 105px;
+        width: 55%;
+    }
+    .menu1 {
+        flex-direction: column;
+        margin: 25px 0px;
+    }
+    .box1 {
+        flex: 2;
+        padding: 10px;
+    }
+    .comidaTitulo {
+        font-size: 1.7rem;
         text-align: center;
+
+    }
+    .nombreItemMenu {
+        font-size: 1.3rem;
+
     }
 }
 
@@ -1064,6 +1118,8 @@ textarea:focus {
 
 .toTop a:hover{
     color: #dbb886;
+    font-size: 0.85rem;
+
 }
 
 .footer .footerBox1 .socialMedia a:hover{
