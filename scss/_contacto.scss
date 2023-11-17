@@ -1,0 +1,209 @@
+/* CONTACTO */
+
+.seccionContacto {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    align-items: center;
+    background: "#080808;"
+}
+
+.cardContacto {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background: #080808;
+}
+
+.mapaContacto {
+    width: 100%;
+    height: auto;
+    flex: 40%;
+    padding: 120px 80px;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.formContacto {
+    width: 100%;
+    height: auto;
+    flex: 60%;
+    padding: 150px;
+
+    h1 {
+        font-size: 2.5rem;
+        font-family: 'Cormorant', serif;
+        letter-spacing: 2px;
+        color: #FFF;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.7rem;
+        letter-spacing: 4px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFF;
+        margin: 20px 0px;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #FFF;
+        margin: 20px 0px;
+    }
+}
+
+.formTexto {
+    width: 100%;
+    font-family: 'Jost', sans-serif;
+    color: #dbb886;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 15px;
+}
+
+.formTexto2 {
+    width: 100%;
+    height: 70px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFF;
+    margin-bottom: 20px;
+    padding: 20px;
+    outline: none;
+    background-color: #080808;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #080808;
+    border-left: 1px solid #080808;
+    border-right: 1px solid #080808;
+
+    &::placeholder {
+        color: #FFF;
+    }
+}
+
+.formMensaje {
+    width: 100%;
+    height: 130px;
+    color: #FFF;
+    background: #080808;
+    border-top: 1px solid #FFF;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+
+    &::placeholder {
+        color: #080808;
+    }
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #dbac66;
+    outline-offset: -2px;
+}
+
+.botonForm {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #403434 20%, #080808 54%);
+    color: #FFF;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    border: 1px solid #FFF;
+    padding: 15px 20px;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #2d3436;
+        background-image: linear-gradient(315deg, #791212 25%, #080808 60%);
+        color: #FFF;
+        font-family: 'Jost', sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 0.9rem;
+        padding: 15px 20px;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+
+    .cardContacto {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .mapaContacto {
+        width: 100%;
+        height: 50vh;
+        flex: 50%;
+        padding: 70px 10px 30px 10px;
+    }
+
+    .formContacto {
+        flex: 50%;
+        padding: 0px 10px 70px 10px;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1307px) {
+
+    .cardContacto {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .mapaContacto {
+        width: 100%;
+        height: 80vh;
+        padding: 100px 10px 50px 10px;
+    }
+
+    .formContacto {
+        padding: 70px 50px 70px 50px;
+    }
+}
+
+@media (min-width: 1308px) and (max-width: 1920px) {
+    .formContacto {
+        flex: 60%;
+        padding: 100px;
+    }
+    .mapaContacto {
+        flex: 40%;
+        padding: 100px 0;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2350px) {
+    .formContacto {
+        flex: 60%;
+        padding: 120px;
+    }
+    .mapaContacto {
+        flex: 40%;
+        padding: 120px 0;
+    }
+}

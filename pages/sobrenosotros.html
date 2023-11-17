@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Fuego & Oro</title>
+    <title>Fuego & Oro Restó | Sobre Nosotros</title>
+    <meta name="description"
+        content="Conocé más sobre Fuego&Oro : Un restaurante ubicado en el centro de la ciudad de Buenos Aires que ofrece una amplia variedad de opciones saludables de tus platos favoritos para el almuerzo y la cena 🍔🍟🍕. También ofrecemos delivery y takeaway.">
+    <meta name="keywords"
+        content="Restaurante Buenos Aires, comida saludable, minutas saludables, hamburguesas, pizza, pastas, empanadas, keto, cetogénico, vegan, vegano, low carb, sin glúten, delivery saludable, takeaway">
     <link rel="icon" type="image/ico" href="../img/favicon.ico">
+
     <script src="https://kit.fontawesome.com/94eb0a4c54.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -58,43 +64,96 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div class="about">
-                <h1 class="varTituloH1">SOBRE NOSOTROS</h1>
-                <h2 class="aboutTituloH2">Nuestra Historia</h2>
-                <br><br>
-                <p>En Fuego & Oro, nuestra historia se entrelaza con la pasión por la comida. Desde que abrimos nuestras
+        <div class="animate__animated animate__fadeIn">
+            <picture class="bannerHeader">
+                <h1 class="animate__animated animate__fadeInUp">SOBRE NOSOTROS</h1>
+                <source media="(min-width: 768px)" srcset="../img/nosotros-banner-desktop.jpg">
+                <img src="../img/nosotros-banner-mobile.jpg" alt="Banner de página sobre Nosotros">
+            </picture>
+        </div>
+        <section class="sobreNosotros">
+            <div class="contenidoSobreNos">
+                <h2 class="animate__animated animate__fadeIn">Nuestra Historia</h2>
+                <p class="animate__animated animate__fadeIn">En Fuego & Oro, nuestra historia se entrelaza con la pasión
+                    por la comida. Desde que abrimos nuestras
                     puertas por primera vez, hemos estado en una búsqueda constante para brindarte la experiencia
-                    culinaria más auténtica y deliciosa.</p>
-                <br>
-                <p>Creemos en la importancia de ofrecer opciones variadas y saludables, por lo que nos enorgullece
-                    presentar una amplia gama de platos que se adaptan a diferentes preferencias dietéticas, incluyendo
-                    opciones veganas, keto y low carb.</p>
-                <br><br>
-                <h2 class="aboutTituloH2">El Restaurante</h2>
-                <br><br>
-                <p>Nuestro restaurante es un rincón acogedor donde se mezcla la elegancia con la calidez. Queremos que
-                    te sientas como en casa mientras disfrutas de una comida excepcional. Ya sea que celebres una
-                    ocasión especial o simplemente quieras disfrutar de una comida reconfortante, estamos aquí para
-                    atenderte con una sonrisa.</p>
-                <br>
-                <p>Gracias por ser parte de nuestra historia y por permitirnos compartir nuestra pasión culinaria
-                    contigo. En Fuego&Oro, estamos dedicados a crear momentos inolvidables alrededor de la mesa.
-                    Esperamos verte pronto y que disfrutes de la experiencia de nuestro espacio.</p>
-            </div>
-            <div>
+                    culinaria más auténtica y deliciosa.<br>
+                    <br>Creemos en la importancia de ofrecer opciones variadas y
+                    saludables, por lo que nos enorgullece presentar una amplia gama de platos que se adaptan a
+                    diferentes preferencias dietéticas, incluyendo
+                    opciones VEGANAS, KETO y LOW CARB 🥑.
+                </p>
                 <a class="botonMenuenAbout" href="./menuonline.html">Ver Menú Online</a>
             </div>
-            <div class="aboutContainerFotos">
-                <img src="../img/about-photo-1.jpg" class="aboutFotos" alt="Foto del interior del restaurante">
-                <img src="../img/about-photo-2.jpg" class="aboutFotos" alt="Foto de hamburguesa y papas fritas">
-                <img src="../img/about-photo-3.jpg" class="aboutFotos" alt="Foto de persona comiendo en restaurante">
+            <img src="../img/about-photo-1.jpg" alt="Foto del interior del restaurante">
+        </section>
+        <section class="sobreNosotros">
+            <img src="../img/about-photo-2.jpg" alt="Foto del interior del restaurante">
+            <div class="contenidoSobreNos2">
+                <h2>El Restaurante</h2>
+                <p>Nuestro restó es un rincón acogedor donde se mezcla la elegancia con la calidez. Ya sea que celebres
+                    una ocasión especial o simplemente quieras disfrutar de una comida reconfortante, estamos aquí para
+                    atenderte con una sonrisa.<br>
+                    <br>Gracias por ser parte de nuestra historia y por permitirnos compartir nuestra pasión culinaria
+                    contigo. En Fuego&Oro, estamos dedicados a crear momentos inolvidables alrededor de la mesa.
+                    ¡Esperamos verte pronto y que disfrutes de la experiencia de nuestro espacio! 😉
+                </p>
+                <a class="botonMenuenAbout" href="./contacto.html">Hacé tu Reserva</a>
+            </div>
+        </section>
+        <section class="containerDietas">
+            <div class="carta">
+                <div class="dietaUno">
+                    <div class="platoUno"></div>
+                    <div class="textoDietaUno">
+                        <h2>KETO</h2>
+                        <p>La dieta Cetogénica, o dieta Keto, es un enfoque nutricional que se centra en la reducción
+                            drástica de la ingesta de carbohidratos (5-10% de las calorías) y el aumento de la cantidad
+                            de grasas en la dieta (70-75% de las calorías).</p>
+                        <p>El objetivo principal es inducir un estado metabólico llamado Cetosis, donde el cuerpo quema
+                            grasas para obtener energía en lugar de depender de los carbohidratos.</p>
+                        <p>Los alimentos comunes en la dieta Keto incluyen carnes, pescados, huevos, lácteos ricos en
+                            grasas, aceites saludables y verduras bajas en carbohidratos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta">
+                <div class="dietaDos">
+                    <div class="platoDos"></div>
+                    <div class="textoDietaDos">
+                        <h2>VEGANA</h2>
+                        <p>La dieta Vegana excluye todos los productos de origen animal, incluyendo carne, pescado,
+                            lácteos, huevos y miel. Los veganos consumen alimentos de origen vegetal, como frutas,
+                            verduras, legumbres, granos enteros, frutos secos y semillas. Este enfoque no solo tiene
+                            implicaciones en la alimentación, sino que también refleja un estilo de vida que busca
+                            minimizar el impacto ambiental y ético de la producción animal.</p>
+                        <p>La dieta Vegetariana suele ser una versión menos estricta de esta dieta, suele incluir:
+                            (depende) huevos, lacteos y/o consumo de pescado.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carta">
+                <div class="dietaTres">
+                    <div class="platoTres"></div>
+                    <div class="textoDietaTres">
+                        <h2>LOW CARB</h2>
+                        <p>La dieta Baja en Carbohidratos implica reducir la cantidad de carbohidratos en la dieta, pero
+                            no eliminarlos casi por completo como en la dieta Keto (alrededor del 20-30% de las calorías
+                            totales).</p>
+                        <p>En lugar de ello, se busca una moderación en la ingesta de carbohidratos, con un enfoque en
+                            consumir carbohidratos de calidad, como aquellos presentes en vegetales sin almidón, frutas
+                            y granos enteros (aparte de consumir todo lo que se consume en Keto).</p>
+                        <p>Ayuda a controlar los niveles de azúcar en la sangre sin entrar en Cetosis.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- AcordeonBootstrap -->
         <section class="contenedorAcordeon">
             <div class="acordeon mx-auto">
+                <h2 class="faqH1">Preguntas Frecuentes</h2>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -144,8 +203,27 @@
                         <div id="flush-collapseThree" class="accordion-collapse collapse"
                             data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body"><br>Aceptamos efectivo, tarjetas de crédito, tarjetas de débito
-                                y Mercadopago. Para ver las promociones por medio de pagos, contactanos o fijate las
+                                y Mercadopago.<br>Para ver las promociones por medio de pagos, contactanos o fijate las
                                 promos vigentes en nuestro Instagram.<br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                ¿Cómo puedo contactarlos para consultas o comentarios?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"><br>Podés contactarnos: <br>
+                                <br>- A través de Whatsapp (solo mensajes) <br>
+                                <br>- Llamando al teléfono +54 11 1234-5678 <br>
+                                <br>- A través del formulario de Contacto en la web <br>
+                                <br>- A través de nuestro Instagram <br>
+                                <br>- Por e-mail: Reservas@paginaweb.com <br>
                             </div>
                         </div>
                     </div>
@@ -176,9 +254,9 @@
             </div>
             <div class="box">
                 <div class="socialMedia">
-                    <a href="#" class="fa-brands fa-whatsapp fa-xl"></a>
-                    <a href="#" class="fa-brands fa-instagram fa-xl"></a>
-                    <a href="#" class="fa-brands fa-tiktok fa-xl"></a>
+                    <a href="https://www.whatsapp.com/" class="fa-brands fa-whatsapp fa-xl"></a>
+                    <a href="https://www.instagram.com/" class="fa-brands fa-instagram fa-xl"></a>
+                    <a href="https://www.tiktok.com/" class="fa-brands fa-tiktok fa-xl"></a>
                 </div>
             </div>
         </div>

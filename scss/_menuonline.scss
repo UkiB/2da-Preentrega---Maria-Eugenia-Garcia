@@ -1,0 +1,254 @@
+/* MENU ONLINE */
+
+.tituloMenu {
+    margin: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.6rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: beige;
+    }
+
+    h1 {
+        font-family: 'Cormorant', serif;
+        font-size: 2.7rem;
+        letter-spacing: 2px;
+        color: #FFF;
+        text-align: center;
+        padding: 0 0 15px 0;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        color: #FFF;
+        text-align: center;
+    }
+}
+
+.parrafo {
+    width: 35%;
+    padding: 0 0 15px 0;
+}
+
+.iconosDietas {
+    width: 35px;
+    opacity: 0.5;
+}
+
+.tituloMenu ul {
+    margin: 10px auto;
+    width: 20%;
+
+    li {
+        list-style: none;
+        float: left;
+        text-align: center;
+        width: 33.33%;
+
+        a {
+            text-decoration: none;
+            transition: .5s;
+
+            .text {
+                opacity: 0;
+                transition: .5s;
+                transform: translateY(20px);
+            }
+        }
+
+        &:hover {
+            .iconosDietas {
+                opacity: 1;
+                cursor: default;
+            }
+
+            .text {
+                transform: translateY(7px);
+                opacity: 1;
+                cursor: default;
+            }
+        }
+    }
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.menu1 {
+    display: flex;
+    margin: 25px 300px 150px 300px;
+}
+
+.box1 {
+    flex: 1;
+    background-color: #080808;
+    margin: 10px;
+    padding: 40px;
+}
+
+.box2 {
+    flex: 1;
+    margin: 30px;
+}
+
+.menu1 .box1 img {
+    width: 30px;
+    float: right;
+    transform: translateY(10px);
+}
+
+.nombreItemMenu {
+    list-style: none;
+    padding: 10px 0 10px 0px;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.3rem;
+}
+
+.lineaItemMenu {
+    display: block;
+    max-width: 1380px;
+    height: 1px;
+    background: #8e8e8e;
+    margin-bottom: 20px;
+}
+
+.precioItemMenu {
+    font-family: 'Cormorant', serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    color: #dbae6f;
+}
+
+.comidaTitulo {
+    font-family: 'Cormorant', serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    color: #FFF;
+}
+
+@media (min-width: 320px) and (max-width: 799px) {
+    .tituloMenu {
+        margin: 65px 30px;
+
+        h5 {
+            margin: 0px 0px 10px 0px;
+        }
+    }
+
+    .parrafo {
+        width: 90%;
+    }
+
+    .tituloMenu ul {
+        margin: 600px 50px 300px 400px;
+        width: 50%;
+    }
+
+    .menu1 {
+        flex-direction: column;
+        margin: 25px 0px;
+    }
+
+    .box1 {
+        flex: 2;
+        padding: 10px;
+    }
+
+    .comidaTitulo {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .nombreItemMenu {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .tituloMenu {
+        margin: 65px 30px;
+
+        h5 {
+            margin: 0px 0px 10px 0px;
+        }
+
+        .parrafo p {
+            margin: 0px 40px 30px 40px;
+        }
+
+        ul {
+            margin: 10px 200px 10px 105px;
+            width: 55%;
+        }
+    }
+
+    .menu1 {
+        flex-direction: column;
+        margin: 25px 0px;
+    }
+
+    .box1 {
+        flex: 2;
+        padding: 10px;
+    }
+
+    .comidaTitulo {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .nombreItemMenu {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1365px) {
+    .menu1 {
+        flex-direction: column;
+        margin: 25px 0px;
+    }
+
+    .box1 {
+        flex: 2;
+        padding: 20px;
+    }
+
+    .comidaTitulo {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+    .menu1 {
+        margin: 25px 0px;
+    }
+
+    .box1 {
+        flex: 1;
+        padding: 20px;
+        margin: 10px;
+        padding: 40px;
+    }
+
+    .box2 {
+        flex: 1;
+        margin: 10px;
+    }
+}
