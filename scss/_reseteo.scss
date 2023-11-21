@@ -5,14 +5,10 @@
 }
 
 body {
-    background-color: #080808;
-    color: #FFF;
+    background-color: $oscuro;
+    color: $claro;
 }
-/*
-.logo {
-    width: 325px;
-}
-*/
+
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;

@@ -1,0 +1,65 @@
+
+/* Botón Oscuro default y hover */
+
+@mixin boton-oscuro {
+    padding: 14px 28px;
+    background-color: $oscuro;
+    color: $claro;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid $claro;
+    cursor: pointer;
+}
+
+@mixin boton-oscuro-hover {
+    padding: 14px 28px;
+    background-color: $secundario2;
+    color: $oscuro;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    border-color: transparent;
+    text-align: center;
+    display: inline-block;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+/* Botón Claro default y hover */
+
+@mixin boton-claro {
+    padding: 14px 28px;
+    background-color: $secundario2;
+    color: $oscuro;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    border: 1px solid $secundario2;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+@mixin boton-claro-hover {
+    padding: 14px 28px;
+    background-color: $oscuro;
+    color: $claro;
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid $claro;
+    transition: 500ms;
+    cursor: pointer;
+}
