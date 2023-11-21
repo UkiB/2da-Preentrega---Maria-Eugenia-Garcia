@@ -4,8 +4,8 @@
     width: 100%;
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #403434 0%, #080808 74%);
-    color: $claro;
-    border-top: 1px solid $claro;
+    color: #fff;
+    border-top: 1px solid #FFF;
 
     .footerBox1 {
         width: 100%;
@@ -25,7 +25,7 @@
                 align-items: center;
 
                 img {
-                    width: 325px;
+                    width: 350px;
                 }
             }
 
@@ -33,16 +33,13 @@
                 font-family: 'Jost', sans-serif;
                 font-size: 0.8rem;
                 letter-spacing: 4px;
-                text-align: center;
                 text-transform: uppercase;
-                padding: 12px 0px;
-                margin-top: 20px;
+                padding: 10px 0px;
             }
 
             p {
                 font-family: 'Montserrat', sans-serif;
                 font-size: 0.9rem;
-                text-align: center;
                 letter-spacing: 3px;
                 margin-bottom: 25px;
             }
@@ -55,8 +52,7 @@
     width: 50px;
     height: 20px;
     position: relative;
-    color: $claro;
-    transform: translateY(10px);
+    color: #FFF;
     margin-right: 50px;
     transition: all 0.3s ease;
 }
@@ -69,16 +65,16 @@
 
     a {
         text-decoration: none;
-        color: $claro;
+        color: #FFF;
         transition: all 0.3s ease;
         padding: 0px 25px;
-        transform: translateY(-145px);
+        transform: translateY(-100px);
         font-family: 'Jost', sans-serif;
         font-size: 0.7rem;
         letter-spacing: 5px;
 
         &:hover {
-            color: $secundario2;
+            color: #dbb886;
             font-size: 0.85rem;
         }
     }
@@ -86,7 +82,7 @@
 
 .footer {
     .footerBox1 .socialMedia a:hover {
-        color: $secundario2;
+        color: #dbb886;
     }
 
     .footerBox2 {
@@ -94,7 +90,7 @@
         padding: 15px 10px;
         text-align: center;
         color: #8e8e8e;
-        border-top: 2px solid $oscuro;
+        border-top: 2px solid #000;
         font-family: 'Jost', sans-serif;
         text-transform: uppercase;
         letter-spacing: 3.5px;
@@ -133,7 +129,7 @@
 
     .toTop a {
         text-decoration: none;
-        color: $claro;
+        color: #FFF;
         transition: all 0.3s ease;
         transform: translateY(-5px);
         margin: 10px 0px;
@@ -171,7 +167,7 @@
 
     .toTop a {
         text-decoration: none;
-        color: $claro;
+        color: #FFF;
         transition: all 0.3s ease;
         transform: translateY(-125px);
         margin: 10px 0px;

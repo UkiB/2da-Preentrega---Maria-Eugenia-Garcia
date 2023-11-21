@@ -8,7 +8,7 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 3rem;
-    color: $claro;
+    color: #FFF;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 1), 1px -2px 10px rgba(0, 0, 0, 1), 6px 5px 21px rgba(0, 0, 0, 1);
     margin-top: 400px;
 }
@@ -43,10 +43,34 @@
         }
 
         .botonMenuenAbout {
-            @include boton-oscuro;
+            padding: 12px 20px;
+            cursor: pointer;
+            background-color: #080808;
+            color: #fff;
+            font-family: 'Jost', sans-serif;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+            text-align: center;
+            display: inline-block;
+            border: 1px;
+            border-style: solid;
+            border-color: #FFFFFF;
 
             &:hover {
-                @include boton-oscuro-hover;
+                padding: 12px 20px;
+                cursor: pointer;
+                background-color: #dbae6f;
+                color: #000;
+                font-family: 'Jost', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 0.9rem;
+                border-color: transparent;
+                text-align: center;
+                display: inline-block;
+                transition: 500ms;
             }
         }
     }
@@ -69,13 +93,36 @@
     }
 
     .botonMenuenAbout {
-        @include boton-oscuro;
         margin: 0px 0px 0px 150px;
+        padding: 12px 20px;
+        cursor: pointer;
+        background-color: #080808;
+        color: #fff;
+        font-family: 'Jost', sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 0.9rem;
+        text-align: center;
+        display: inline-block;
+        border: 1px;
+        border-style: solid;
+        border-color: #FFFFFF;
 
         &:hover {
-            @include boton-oscuro-hover;
             margin: 0px 0px 0px 150px;
-
+            padding: 12px 20px;
+            cursor: pointer;
+            background-color: #dbae6f;
+            color: #000;
+            font-family: 'Jost', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+            border-color: transparent;
+            text-align: center;
+            display: inline-block;
+            transition: 500ms;
         }
     }
 }
@@ -127,7 +174,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $oscuro;
+    background-color: #080808;
     transition: 300ms;
     position: absolute;
 }
@@ -164,7 +211,7 @@
 .textoDietaTres {
     height: 350px;
     width: 350px;
-    background-color: $oscuro;
+    background-color: #080808;
     position: absolute;
     margin-top: 400px;
     z-index: 2;
@@ -231,12 +278,12 @@
     font-family: 'Jost', sans-serif;
     letter-spacing: 2px;
     font-size: 1.1rem;
-    color: $claro;
+    color: #FFF;
 }
 
 .accordion-item {
     background: transparent;
-    color: $claro;
+    color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
 }
@@ -248,9 +295,9 @@
 
     &:not(.collapsed) {
         background: transparent;
-        border-bottom: 1px solid $claro;
+        border-bottom: 1px solid #FFF;
         overflow: hidden;
-        color: $secundario2;
+        color: #dbb886;
     }
 
     &::after {

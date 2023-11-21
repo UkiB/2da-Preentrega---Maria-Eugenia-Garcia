@@ -5,7 +5,7 @@
     height: 50%;
     display: grid;
     align-items: center;
-    background: $oscuro;
+    background: "#080808;"
 }
 
 .cardContacto {
@@ -15,7 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    background: $oscuro;
+    background: #080808;
 }
 
 .mapaContacto {
@@ -40,7 +40,7 @@
         font-size: 2.5rem;
         font-family: 'Cormorant', serif;
         letter-spacing: 2px;
-        color: $claro;
+        color: #FFF;
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 10px;
@@ -52,7 +52,7 @@
         letter-spacing: 4px;
         text-align: center;
         text-transform: uppercase;
-        color: $claro;
+        color: #FFF;
         margin: 20px 0px;
     }
 
@@ -60,7 +60,7 @@
         font-family: 'Montserrat', sans-serif;
         letter-spacing: 2px;
         text-align: center;
-        color: $claro;
+        color: #FFF;
         margin: 20px 0px;
     }
 }
@@ -68,7 +68,7 @@
 .formTexto {
     width: 100%;
     font-family: 'Jost', sans-serif;
-    color: $secundario;
+    color: #dbb886;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 15px;
@@ -78,69 +78,68 @@
     width: 100%;
     height: 70px;
     font-family: 'Montserrat', sans-serif;
-    color: $claro;
+    color: #FFF;
     margin-bottom: 20px;
     padding: 20px;
     outline: none;
-    background-color: $oscuro;
-    border-bottom: 1px solid $claro;
-    border-top: 1px solid $oscuro;
-    border-left: 1px solid $oscuro;
-    border-right: 1px solid $oscuro;
+    background-color: #080808;
+    border-bottom: 1px solid #FFF;
+    border-top: 1px solid #080808;
+    border-left: 1px solid #080808;
+    border-right: 1px solid #080808;
 
     &::placeholder {
-        color: $claro;
+        color: #FFF;
     }
 }
 
 .formMensaje {
     width: 100%;
     height: 130px;
-    color: $claro;
-    background: $oscuro;
-    border-top: 1px solid $claro;
+    color: #FFF;
+    background: #080808;
+    border-top: 1px solid #FFF;
     outline: none;
     margin-bottom: 20px;
     padding: 15px;
     font-family: 'Montserrat', sans-serif;
 
     &::placeholder {
-        color: $oscuro;
+        color: #080808;
     }
 }
 
 input:focus,
 textarea:focus {
-    outline: 2px solid $secundario2;
+    outline: 2px solid #dbac66;
     outline-offset: -2px;
 }
 
 .botonForm {
     background-color: #2d3436;
     background-image: linear-gradient(315deg, #403434 20%, #080808 54%);
-    color: $claro;
+    color: #FFF;
     font-family: 'Jost', sans-serif;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 4px;
-    font-size: 1rem;
-    border: 1px solid $claro;
-    padding: 20px 20px;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    border: 1px solid #FFF;
+    padding: 15px 20px;
     width: 100%;
     cursor: pointer;
 
     &:hover {
         background-color: #2d3436;
         background-image: linear-gradient(315deg, #791212 25%, #080808 60%);
-        color: $claro;
+        color: #FFF;
         font-family: 'Jost', sans-serif;
         text-transform: uppercase;
         text-decoration: none;
-        letter-spacing: 4px;
-        font-size: 1rem;
-        padding: 20px 20px;
+        letter-spacing: 3px;
+        font-size: 0.9rem;
+        padding: 15px 20px;
         width: 100%;
-        transition: 500ms;
         cursor: pointer;
     }
 }

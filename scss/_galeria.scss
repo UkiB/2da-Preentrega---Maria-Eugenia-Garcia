@@ -12,7 +12,7 @@
         font-size: 3rem;
         font-family: 'Cormorant', serif;
         letter-spacing: 2px;
-        color: $claro;
+        color: #FFF;
         text-align: center;
         padding: 0px 0px 30px 0px;
     }
@@ -23,7 +23,7 @@ main {
     overflow-x: hidden;
 }
 
-.videoHero {
+.videoParallax {
     video {
         object-fit: cover;
         width: 100vw;
@@ -37,16 +37,7 @@ main {
 .divBoton {
     text-align: center;
     margin: 40px 40px 70px 40px;
-
-    .botonMenu {
-        @include boton-oscuro;
-
-        &:hover {
-            @include boton-oscuro-hover;
-        }
-    }
 }
-
 
 @media (min-width: 320px) and (max-width: 599px) {
     body {
@@ -54,10 +45,12 @@ main {
         overflow-x: hidden;
     }
 
-    .botonMenu {
+    .botonMenuEnHome {
+        padding: 14px 28px;
         margin-top: 10px;
 
         &:hover {
+            padding: 14px 28px;
             margin-top: 10px;
         }
     }
@@ -98,7 +91,7 @@ img {
         margin-top: 20px;
 
         &:hover {
-            border: 1px solid $claro;
+            border: 1px solid #fff;
             transition: 0.3s;
         }
     }
@@ -202,11 +195,11 @@ img {
     letter-spacing: 5px;
     text-transform: uppercase;
     text-decoration: none;
-    color: $secundario;
+    color: #f3caad;
     padding: 0px 10px;
 
     &:hover {
-        color: $acento;
+        color: #bd1717;
         transition: 0.3s;
     }
 }
