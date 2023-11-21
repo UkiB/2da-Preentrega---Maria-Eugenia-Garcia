@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Colores */
-/* Fuentes */
+/* Botón Oscuro default y hover */
+/* Botón Claro default y hover */
 /* NavBar Bootstrap */
 .logoNavbar {
   width: 300px;
@@ -47,7 +48,7 @@
   color: #FFF;
 }
 .navbar-nav .nav-item .nav-link:hover {
-  color: #f3caad;
+  color: #eacaa0;
   text-decoration: underline;
 }
 
@@ -79,15 +80,12 @@
 
 .textoHome {
   margin: 120px;
-  padding: 200 0 200 0px;
 }
 
 .botonMenuEnHome {
-  margin-top: 10px;
-  padding: 12px 20px;
-  cursor: pointer;
+  padding: 14px 28px;
   background-color: #080808;
-  color: #fff;
+  color: #FFF;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -95,16 +93,14 @@
   font-size: 0.9rem;
   text-align: center;
   display: inline-block;
-  border: 1px;
-  border-style: solid;
-  border-color: #FFF;
+  border: 1px solid #FFF;
+  cursor: pointer;
+  margin-top: 10px;
 }
 .botonMenuEnHome:hover {
-  margin-top: 10px;
-  padding: 12px 20px;
-  cursor: pointer;
+  padding: 14px 28px;
   background-color: #dbb886;
-  color: #000;
+  color: #080808;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -112,33 +108,30 @@
   border-color: transparent;
   text-align: center;
   display: inline-block;
+  transition: 500ms;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .botonPedidoEnHome {
-  margin-top: 50px;
-  margin-right: 20px;
-  padding: 12px 28px;
-  cursor: pointer;
+  padding: 14px 28px;
   background-color: #dbb886;
-  color: #000;
+  color: #080808;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 3px;
   font-size: 0.9rem;
-  border: 1px;
-  border-style: solid;
-  border-color: #dbb886;
+  border: 1px solid #dbb886;
   text-align: center;
   display: inline-block;
+  cursor: pointer;
+  margin: 50px 20px 0px 0px;
 }
 .botonPedidoEnHome:hover {
-  margin-top: 50px;
-  margin-right: 20px;
-  padding: 12px 28px;
-  cursor: pointer;
+  padding: 14px 28px;
   background-color: #080808;
-  color: #fff;
+  color: #FFF;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -146,9 +139,10 @@
   font-size: 0.9rem;
   text-align: center;
   display: inline-block;
-  border: 1px;
-  border-style: solid;
-  border-color: #FFF;
+  border: 1px solid #FFF;
+  transition: 500ms;
+  cursor: pointer;
+  margin: 50px 20px 0px 0px;
 }
 
 .homeImage {
@@ -177,7 +171,7 @@ main {
   overflow-x: hidden;
 }
 
-.videoParallax video {
+.videoHero video {
   object-fit: cover;
   width: 100vw;
   height: 50vh;
@@ -190,18 +184,44 @@ main {
   text-align: center;
   margin: 40px 40px 70px 40px;
 }
+.divBoton .botonMenu {
+  padding: 14px 28px;
+  background-color: #080808;
+  color: #FFF;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #FFF;
+  cursor: pointer;
+}
+.divBoton .botonMenu:hover {
+  padding: 14px 28px;
+  background-color: #dbb886;
+  color: #080808;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  border-color: transparent;
+  text-align: center;
+  display: inline-block;
+  transition: 500ms;
+  cursor: pointer;
+}
 
 @media (min-width: 320px) and (max-width: 599px) {
   body {
     max-width: 100%;
     overflow-x: hidden;
   }
-  .botonMenuEnHome {
-    padding: 14px 28px;
+  .botonMenu {
     margin-top: 10px;
   }
-  .botonMenuEnHome:hover {
-    padding: 14px 28px;
+  .botonMenu:hover {
     margin-top: 10px;
   }
 }
@@ -238,7 +258,7 @@ img {
   margin-top: 20px;
 }
 .columnaFotos img:hover {
-  border: 1px solid #fff;
+  border: 1px solid #FFF;
   transition: 0.3s;
 }
 
@@ -334,7 +354,7 @@ img {
   letter-spacing: 5px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #f3caad;
+  color: #eacaa0;
   padding: 0px 10px;
 }
 .linkIg:hover {
@@ -406,11 +426,11 @@ img {
   font-size: 0.6rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: beige;
+  color: #eacaa0;
 }
 .tituloMenu h1 {
   font-family: "Cormorant", serif;
-  font-size: 2.7rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   color: #FFF;
   text-align: center;
@@ -515,14 +535,14 @@ img {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 2rem;
-  color: #dbae6f;
+  color: #dbb886;
 }
 
 .comidaTitulo {
   font-family: "Cormorant", serif;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #FFF;
 }
 
@@ -655,10 +675,9 @@ img {
   margin: 50px 150px 50px 0px;
 }
 .sobreNosotros .contenidoSobreNos .botonMenuenAbout {
-  padding: 12px 20px;
-  cursor: pointer;
+  padding: 14px 28px;
   background-color: #080808;
-  color: #fff;
+  color: #FFF;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -666,15 +685,13 @@ img {
   font-size: 0.9rem;
   text-align: center;
   display: inline-block;
-  border: 1px;
-  border-style: solid;
-  border-color: #FFFFFF;
+  border: 1px solid #FFF;
+  cursor: pointer;
 }
 .sobreNosotros .contenidoSobreNos .botonMenuenAbout:hover {
-  padding: 12px 20px;
-  cursor: pointer;
-  background-color: #dbae6f;
-  color: #000;
+  padding: 14px 28px;
+  background-color: #dbb886;
+  color: #080808;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -683,6 +700,7 @@ img {
   text-align: center;
   display: inline-block;
   transition: 500ms;
+  cursor: pointer;
 }
 
 .contenidoSobreNos2 {
@@ -700,11 +718,9 @@ img {
   margin: 50px 0px 50px 150px;
 }
 .contenidoSobreNos2 .botonMenuenAbout {
-  margin: 0px 0px 0px 150px;
-  padding: 12px 20px;
-  cursor: pointer;
+  padding: 14px 28px;
   background-color: #080808;
-  color: #fff;
+  color: #FFF;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -712,16 +728,14 @@ img {
   font-size: 0.9rem;
   text-align: center;
   display: inline-block;
-  border: 1px;
-  border-style: solid;
-  border-color: #FFFFFF;
+  border: 1px solid #FFF;
+  cursor: pointer;
+  margin: 0px 0px 0px 150px;
 }
 .contenidoSobreNos2 .botonMenuenAbout:hover {
-  margin: 0px 0px 0px 150px;
-  padding: 12px 20px;
-  cursor: pointer;
-  background-color: #dbae6f;
-  color: #000;
+  padding: 14px 28px;
+  background-color: #dbb886;
+  color: #080808;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -730,6 +744,8 @@ img {
   text-align: center;
   display: inline-block;
   transition: 500ms;
+  cursor: pointer;
+  margin: 0px 0px 0px 150px;
 }
 
 /* Dietas */
@@ -1072,7 +1088,7 @@ img {
   height: 50%;
   display: grid;
   align-items: center;
-  background: "#080808;";
+  background: #080808;
 }
 
 .cardContacto {
@@ -1131,7 +1147,7 @@ img {
 .formTexto {
   width: 100%;
   font-family: "Jost", sans-serif;
-  color: #dbb886;
+  color: #eacaa0;
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 15px;
@@ -1172,7 +1188,7 @@ img {
 
 input:focus,
 textarea:focus {
-  outline: 2px solid #dbac66;
+  outline: 2px solid #dbb886;
   outline-offset: -2px;
 }
 
@@ -1183,10 +1199,10 @@ textarea:focus {
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 3px;
-  font-size: 0.9rem;
+  letter-spacing: 4px;
+  font-size: 1rem;
   border: 1px solid #FFF;
-  padding: 15px 20px;
+  padding: 20px 20px;
   width: 100%;
   cursor: pointer;
 }
@@ -1197,10 +1213,11 @@ textarea:focus {
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 3px;
-  font-size: 0.9rem;
-  padding: 15px 20px;
+  letter-spacing: 4px;
+  font-size: 1rem;
+  padding: 20px 20px;
   width: 100%;
+  transition: 500ms;
   cursor: pointer;
 }
 
@@ -1262,7 +1279,7 @@ textarea:focus {
   width: 100%;
   background-color: #2d3436;
   background-image: linear-gradient(315deg, #403434 0%, #080808 74%);
-  color: #fff;
+  color: #FFF;
   border-top: 1px solid #FFF;
 }
 .footer .footerBox1 {
@@ -1282,18 +1299,21 @@ textarea:focus {
   align-items: center;
 }
 .footer .footerBox1 .box div img {
-  width: 350px;
+  width: 325px;
 }
 .footer .footerBox1 .box h5 {
   font-family: "Jost", sans-serif;
   font-size: 0.8rem;
   letter-spacing: 4px;
+  text-align: center;
   text-transform: uppercase;
-  padding: 10px 0px;
+  padding: 12px 0px;
+  margin-top: 20px;
 }
 .footer .footerBox1 .box p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
+  text-align: center;
   letter-spacing: 3px;
   margin-bottom: 25px;
 }
@@ -1304,6 +1324,7 @@ textarea:focus {
   height: 20px;
   position: relative;
   color: #FFF;
+  transform: translateY(10px);
   margin-right: 50px;
   transition: all 0.3s ease;
 }
@@ -1319,7 +1340,7 @@ textarea:focus {
   color: #FFF;
   transition: all 0.3s ease;
   padding: 0px 25px;
-  transform: translateY(-100px);
+  transform: translateY(-145px);
   font-family: "Jost", sans-serif;
   font-size: 0.7rem;
   letter-spacing: 5px;
@@ -1337,7 +1358,7 @@ textarea:focus {
   padding: 15px 10px;
   text-align: center;
   color: #8e8e8e;
-  border-top: 2px solid #000;
+  border-top: 2px solid #080808;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.5px;
@@ -1419,11 +1440,6 @@ body {
   color: #FFF;
 }
 
-/*
-.logo {
-    width: 325px;
-}
-*/
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
