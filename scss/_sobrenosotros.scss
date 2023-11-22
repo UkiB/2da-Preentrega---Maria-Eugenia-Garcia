@@ -42,6 +42,20 @@
             margin: 50px 150px 50px 0px;
         }
 
+        a {
+            font-family: "Jost", sans-serif;
+            letter-spacing: 3px;
+            font-size: 1.1rem;
+            color: $claro;
+            text-decoration: none;
+            padding-left: 5px;
+
+            &:hover {
+                color: $secundario2;
+                transition: 300ms;
+            }
+        }
+
         .botonMenuenAbout {
             @include boton-oscuro;
 
@@ -51,6 +65,7 @@
         }
     }
 }
+
 
 .contenidoSobreNos2 {
     padding: 20px;
@@ -83,36 +98,37 @@
 
 /* Dietas */
 
-.containerDietas {
+#containerDietas {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 400px auto 200px auto;
+    margin: 400px auto;
+    max-width: 1000px;
 }
 
 .carta {
     height: 600px;
     width: 400px;
-    margin: 10px;
+    margin: 20px;
     transition: 300ms;
 
     &:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
 
         .platoUno {
-            transform: translatey(-20px);
+            transform: translatey(-10px);
             transition: 300ms;
             background-image: url(../img/plato-keto.png);
         }
 
         .platoDos {
-            transform: translatey(-20px);
+            transform: translatey(-10px);
             transition: 300ms;
             background-image: url(../img/plato-vegano.png);
         }
 
         .platoTres {
-            transform: translatey(-20px);
+            transform: translatey(-10px);
             transition: 300ms;
             background-image: url(../img/plato-lowcarb.png);
         }
@@ -123,7 +139,7 @@
 .dietaDos,
 .dietaTres {
     height: 350px;
-    width: 400px;
+    width: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,6 +236,7 @@
 .contenedorAcordeon {
     background-image: url("../img/img-bg-faq.jpg");
     padding: 130px 0 130px 0;
+    margin-top: -550px;
 }
 
 .acordeon {
