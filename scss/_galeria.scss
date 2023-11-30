@@ -2,7 +2,7 @@
 
 .galeriaFotos {
     p {
-        font-family: 'Jost', sans-serif;
+        font-family: $fuenteSecundaria;
         font-size: 1.1rem;
         letter-spacing: 2px;
         text-align: center;
@@ -10,7 +10,7 @@
 
     h1 {
         font-size: 3rem;
-        font-family: 'Cormorant', serif;
+        font-family: $fuentePrincipal;
         letter-spacing: 2px;
         color: $claro;
         text-align: center;
@@ -96,10 +96,10 @@ img {
 
     img {
         margin-top: 20px;
+        transition: 0.3s ease-in-out;
 
         &:hover {
             border: 1px solid $claro;
-            transition: 0.3s;
         }
     }
 }
@@ -183,12 +183,11 @@ img {
 }
 
 .galeriaIg h2 {
-    font-family: 'Cormorant', serif;
+    font-family: $fuentePrincipal;
     font-size: 2rem;
     letter-spacing: 7px;
     text-transform: uppercase;
     text-align: center;
-    --animate-duration: 2s;
 }
 
 .divIg {
@@ -197,7 +196,7 @@ img {
 }
 
 .linkIg {
-    font-family: 'Jost', sans-serif;
+    font-family: $fuenteSecundaria;
     font-size: 1.1rem;
     letter-spacing: 5px;
     text-transform: uppercase;

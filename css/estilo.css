@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Colores */
+/* Colores y Fuentes */
 /* Botón Oscuro default y hover */
 /* Botón Claro default y hover */
 /* NavBar Bootstrap */
@@ -134,7 +134,7 @@
   letter-spacing: 3px;
   font-size: 2rem;
   text-align: center;
-  padding: 50px 0px;
+  padding: 50px 0px 40px 0px;
 }
 .estasListo p {
   text-align: center;
@@ -437,10 +437,10 @@ img {
 }
 .columnaFotos img {
   margin-top: 20px;
+  transition: 0.3s ease-in-out;
 }
 .columnaFotos img:hover {
   border: 1px solid #FFF;
-  transition: 0.3s;
 }
 
 @media (max-width: 1024px) {
@@ -521,7 +521,6 @@ img {
   letter-spacing: 7px;
   text-transform: uppercase;
   text-align: center;
-  --animate-duration: 2s;
 }
 
 .divIg {
@@ -624,8 +623,12 @@ img {
   text-align: center;
 }
 
+.animate__animated.animate__fadeIn {
+  --animate-duration: 1.75s;
+}
+
 .parrafo {
-  width: 35%;
+  width: 37%;
   padding: 0 0 15px 0;
 }
 
@@ -637,6 +640,7 @@ img {
 .tituloMenu ul {
   margin: 10px auto;
   width: 20%;
+  padding: 0px 32px;
 }
 .tituloMenu ul li {
   list-style: none;
@@ -673,7 +677,7 @@ img {
 
 .menu1 {
   display: flex;
-  margin: 25px 300px 150px 300px;
+  margin: 25px 300px 70px 300px;
 }
 
 .box1 {
@@ -684,8 +688,28 @@ img {
 }
 
 .box2 {
+  position: relative;
   flex: 1;
   margin: 30px;
+  overflow: hidden;
+}
+.box2 img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.5s ease-in-out;
+}
+.box2 .hoverImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #080808;
+  transition: opacity 0.5s ease-in-out;
+}
+.box2:hover .hoverImage {
+  opacity: 1;
 }
 
 .menu1 .box1 img {
@@ -729,68 +753,20 @@ img {
 
 @media (min-width: 320px) and (max-width: 799px) {
   .tituloMenu {
-    margin: 65px 30px;
+    margin: 65px 30px 30px 30px;
   }
   .tituloMenu h5 {
     margin: 0px 0px 10px 0px;
   }
   .parrafo {
-    width: 90%;
+    width: 100%;
   }
   .tituloMenu ul {
-    margin: 600px 50px 300px 400px;
-    width: 50%;
+    width: 70%;
   }
   .menu1 {
     flex-direction: column;
-    margin: 25px 0px;
-  }
-  .box1 {
-    flex: 2;
-    padding: 10px;
-  }
-  .comidaTitulo {
-    font-size: 1.7rem;
-    text-align: center;
-  }
-  .nombreItemMenu {
-    font-size: 1.3rem;
-  }
-}
-@media (max-width: 800px) {
-  .tituloMenu {
-    margin: 65px 30px;
-  }
-  .tituloMenu h5 {
-    margin: 0px 0px 10px 0px;
-  }
-  .tituloMenu .parrafo p {
-    margin: 0px 40px 30px 40px;
-  }
-  .tituloMenu ul {
-    margin: 10px 200px 10px 105px;
-    width: 55%;
-  }
-  .menu1 {
-    flex-direction: column;
-    margin: 25px 0px;
-  }
-  .box1 {
-    flex: 2;
-    padding: 10px;
-  }
-  .comidaTitulo {
-    font-size: 1.7rem;
-    text-align: center;
-  }
-  .nombreItemMenu {
-    font-size: 1.3rem;
-  }
-}
-@media (max-width: 1365px) {
-  .menu1 {
-    flex-direction: column;
-    margin: 25px 0px;
+    margin: 0px;
   }
   .box1 {
     flex: 2;
@@ -799,6 +775,52 @@ img {
   .comidaTitulo {
     font-size: 1.7rem;
     text-align: center;
+  }
+  .nombreItemMenu {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 366px) {
+  .menu1 .box1 img {
+    transform: translateY(30px);
+  }
+}
+@media (min-width: 800px) and (max-width: 1365px) {
+  .tituloMenu {
+    margin: 65px 30px;
+    /* Revisar esta parte */
+  }
+  .tituloMenu h5 {
+    margin: 0px 0px 10px 0px;
+  }
+  .tituloMenu .parrafo p {
+    width: 100%;
+  }
+  .tituloMenu .parrafo ul {
+    margin: 10px 200px 10px 105px;
+    width: 100%;
+  }
+  .tituloMenu .parrafo .box1 {
+    padding: 50px;
+  }
+  .menu1 {
+    flex-direction: column;
+    margin: 25px 0px;
+  }
+  .box1 {
+    flex: 2;
+    padding: 50px;
+  }
+  .box2 img {
+    width: 100%;
+    padding: 0px 35px;
+  }
+  .comidaTitulo {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+  .nombreItemMenu {
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 1366px) and (max-width: 1920px) {
@@ -827,7 +849,7 @@ img {
   font-size: 3rem;
   color: #FFF;
   text-shadow: 3px 3px 4px rgb(0, 0, 0), 1px -2px 10px rgb(0, 0, 0), 6px 5px 21px rgb(0, 0, 0);
-  margin-top: 400px;
+  margin-top: 360px;
 }
 
 .sobreNosotros {
@@ -1272,7 +1294,12 @@ img {
     margin-top: 150px;
   }
 }
-@media (min-width: 1201px) and (max-width: 2100px) {
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .bannerHeader h1 {
+    margin-top: 220px;
+  }
+}
+@media (min-width: 1601px) and (max-width: 2100px) {
   .bannerHeader h1 {
     margin-top: 300px;
   }
@@ -1442,11 +1469,11 @@ textarea:focus {
   }
   .mapaContacto {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     padding: 100px 10px 50px 10px;
   }
   .formContacto {
-    padding: 70px 50px 70px 50px;
+    padding: 50px 50px 70px 50px;
   }
 }
 @media (min-width: 1308px) and (max-width: 1920px) {
@@ -1638,6 +1665,71 @@ body {
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
+}
+
+.paginaError {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.paginaError h1 {
+  font-family: "Cormorant", serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  padding-bottom: 60px;
+}
+.paginaError img {
+  width: 50%;
+  padding-bottom: 35px;
+}
+
+.botonAlHome {
+  padding: 14px 28px;
+  background-color: #dbb886;
+  color: #080808;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  border: 1px solid #dbb886;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+.botonAlHome:hover {
+  padding: 14px 28px;
+  background-color: #080808;
+  color: #FFF;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #FFF;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 1366px) {
+  .paginaError h1 {
+    font-size: 2rem;
+    padding: 35px;
+  }
+  .paginaError img {
+    width: 90%;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .paginaError img {
+    width: 65%;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

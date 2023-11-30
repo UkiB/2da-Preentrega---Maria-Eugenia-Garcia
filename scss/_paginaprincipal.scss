@@ -2,12 +2,11 @@
 
 .varTituloH1 {
     padding-bottom: 50px;
-    font-family: 'Cormorant', serif;
+    font-family: $fuentePrincipal;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
     font-size: 2.5rem;
-
 }
 
 .textoHome {
@@ -41,14 +40,16 @@
 }
 
 .estasListo {
+
     h2 {
-        font-family: 'Cormorant', serif;
+        font-family: $fuentePrincipal;
         text-transform: uppercase;
         text-align: center;
         letter-spacing: 3px;
         font-size: 2rem;
         text-align: center;
-        padding: 50px 0px;
+        padding: 50px 0px 40px 0px;
+
     }
 
     p {
@@ -154,7 +155,7 @@
 }
 
 .galeriaIg h2 {
-    font-family: 'Cormorant', serif;
+    font-family: $fuentePrincipal;
     font-size: 2rem;
     letter-spacing: 7px;
     text-transform: uppercase;
@@ -169,7 +170,7 @@
 }
 
 .linkIg {
-    font-family: 'Jost', sans-serif;
+    font-family: $fuenteSecundaria;
     font-size: 1.1rem;
     letter-spacing: 5px;
     text-transform: uppercase;

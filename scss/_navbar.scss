@@ -33,13 +33,13 @@
     }
 
     font-size: 1rem;
-    font-family: 'Jost', sans-serif;
+    font-family: $fuenteSecundaria;
     letter-spacing: 3px;
     text-transform: uppercase;
 
     &:hover {
         font-size: 1rem;
-        font-family: 'Jost', sans-serif;
+        font-family: $fuenteSecundaria;
         letter-spacing: 3px;
         text-transform: uppercase;
     }

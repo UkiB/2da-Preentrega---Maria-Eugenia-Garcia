@@ -1,0 +1,54 @@
+.paginaError {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-family: $fuentePrincipal;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 2.5rem;
+        padding-bottom: 60px;
+    }
+
+    img {
+        width: 50%;
+        padding-bottom: 35px;
+    }
+}
+
+.botonAlHome {
+    @include boton-claro;
+
+    &:hover {
+        @include boton-claro-hover;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 1366px) {
+
+    .paginaError {
+        h1 {
+            font-size: 2rem;
+            padding: 35px;
+        }
+
+        img {
+            width: 90%;
+        }
+
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px) {
+
+    .paginaError {
+        img {
+            width: 65%;
+        }
+    }
+}
